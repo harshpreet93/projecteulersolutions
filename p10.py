@@ -2,7 +2,7 @@ import time
 #The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 #Find the sum of all the primes below two million.
 
-#sieve method returns a list of all primes from 2 to the upperbound. The list
+#sieve function returns a list of all primes from 2 to the upperbound. The list
 #also contains empty indexes, they can be ignored
 def sieve(upperbound):
 	plist=[]
