@@ -14,7 +14,8 @@ def sieve(upperbound):
 	return plist[2:]
 start=time.clock()
 primelist= sieve(2000000)
+#print(primelist)
 sum=0
 for i in primelist:sum+=i
 elapsed=(time.clock()-start)
-print str(sum)+" finished in "+str(elapsed)+" seconds"
+print(str(sum)+" finished in "+str(elapsed)+" seconds")

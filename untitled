@@ -1,0 +1,12 @@
+
+def sieve(lowerbound, upperbound):
+	plist=[]
+	for i in range(lowerbound,upperbound+1):plist.append(i)
+	for j in range(lowerbound,int(len(plist)**0.5)):
+		if(plist[j]!=0):
+			for k in range((2*j),len(plist),j):
+				if(plist[k]!=0):plist[k]=0
+	return plist[2:]
+
+
+print(sieve(11,20))

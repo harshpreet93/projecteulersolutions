@@ -11,7 +11,6 @@ def divisibility():
 	while(div==False):
 		counter=0
 		for i in reversed(cases):
-			#if(check%2520!=0):break
 			if(check%i==0):counter+=1
 			else:break
 		if counter==len(cases):
@@ -20,6 +19,6 @@ def divisibility():
 			return "the answer is "+str(check), "finished in "+str(elapsed)+" seconds"
 		else:check+=2520
 
-print divisibility()
+print(divisibility())
 
 
